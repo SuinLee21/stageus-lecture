@@ -55,6 +55,12 @@ app.use("/account", accoutApi);
 const chatApi = require("../src/routes/chat");
 app.use("/chat", chatApi);
 
+const clickerApi = require("../src/routes/clicker");
+app.use("/clicker", clickerApi);
+
+const cartApi = require("../src/routes/cart");
+app.use("/cart", cartApi);
+
 app.listen(port, () => {
     console.log(`${port}번에서 HTTP Web Server 실행`);
 });
